@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Navbar{
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border-bottom: 1px solid black;
+  justify-items: center;
   align-items: center;
+}
+.Navbar-logo{
+  margin-left: -4rem;
+  padding: 1rem;
+  display: flex;
+  float: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.Navbar-logo span{
+  padding-left: 1rem;
 }
+.Navbar-mid{
+  padding: 1rem;
+}
+.Navbar-mid Button{
+  color: black;
+}
+.Navbar-end{
+  margin-left: 3rem;
+}
+.Navbar-end Button{
+  color: black;
+}
+.task-body{
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 30% 25%;
+  margin-top: 4.5rem;
+}
+.login-sec-heading{
+  padding: 0rem 1rem;
+}
+.login-btns{
+  padding: 1rem;
+}
+.login-btns Button{
+  margin: 0rem 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+.ship-text{
+  margin-top: -2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 1rem;
+}
+.ship-text TextField{
+  padding: 1rem;
+}
+/* .text-boxes fieldset{
+  border-radius: 0;
+} */
+.payment-sec{
+  display: grid;
+  grid-template-rows: auto auto;
+  /* justify-items: center; */
+  align-items: center;
+}
+.payment-sec-one{
+  padding-top: 5rem;
+}
+.payment-btns{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+.payment-btns button{
+  border: 1px solid rgba(0, 0, 0, 0.500);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.500);
+  color: black;
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 0rem;
+}
+.delivery-btns{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.delivery-btns Button{
+  padding: 0rem;
+  border: 1px solid rgba(0, 0, 0, 0.500);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.500);
+  color: black;
+  border-radius: 25px;
+  margin: 1rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.btn-img{
+  width: 40px;
+  height: 40px;
+}
+.delivery-text{
+  margin-left: 20px;
+}
+.cart-sec{
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+  justify-items: center;
+}
+.cart-icon Button{
+  border-radius: 50%;
+  margin: 0rem;
+  padding: 1rem;
+}
+.cart-icon-one img{
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 500);
+  width: 20px;
+  height: 20px;
+}
+.cart-info{
+  margin: 1rem;
+}
+.cart-info-one{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  /* border: 1px solid darkgrey; */
+  box-shadow: 1px 1px 4px darkgrey;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+.cart-info-one div{
+  padding: 0.8rem;
+}
+.cart-info-text p{
+  padding: -1rem;
+}
+.cart-last{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+.task-footer{
+  position: absolute;
+  margin-top: 41rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+.shop-btn Button{
+  padding: 1rem;
+  margin: 0rem 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+.back-btn Button {
+  border-radius: 50px;
+}
+.back-btn Button img{
+  height: 30px;
+  width: 30px;
 }
