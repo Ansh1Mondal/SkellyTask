@@ -305,6 +305,7 @@ export default function SkellyTask() {
         </div>
         <div className="shop-btn">
           <Button>Continue Shopping</Button>
+
           <Button>Proceed to Payment</Button>
         </div>
       </div>
